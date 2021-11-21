@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encuentra tu super Hero</title>
+    <!-- Tailwind -->
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="bg-gray-900 py-5">
+      <div class="mx-10 w-16 flex items-center">
+        <img class="w-16 h-16 inline-block mr-5" src="img/sh2.jpg" alt="" srcset="" />
+        <h2 class="text-white text-2xl	">SuperHero</h2>
+      </div>
+    </nav>
+    <section class="flex flex-col">
+        <img class="w-64 mx-auto my-8" src="img/sh1.jpg" alt="" srcset="">
+        <div class="mx-10 flex flex-col">
+           <h2 class="text-3xl text-gray-800 mx mb-5">Encuentra tu SuperHero</h2>
+           <form action="#">
+            <p class="mb-5 text-gray-800">Ingresa el número del SuperHero a buscar</p>
+            <input type="number" name="idSuperHero" id="idSuperHero" class="border border-gray-500 rounded-md mb-5">
+            <input type="submit" class="bg-gray-800 w-2/12 p-1 rounded-md text-white" value="Buscar">
+           </form> 
+        </div>
+    </section>
+    <section class="mt-8 mx-10" id="result">
+        <h2 class="text-3xl text-gray-800 mx mb-5">SuperHero Encontrado</h2>
+        <div class="card flex">
+            <div class="img-card">
+                <img class="avatar w-64" src="img/sh2.jpg" alt="" srcset="">
+            </div>
+            <div class="desc-card ml-6">
+                <p class="font-bold">Nombre: <span class="font-light" id="nombre-superhero"></span></p>
+                <hr>
+                <p class="font-bold">Conexiones: <span class="font-light" id="conexiones"></span></p>
+                <hr>
+                <p class="font-bold">Publicado por: <span class="font-light" id="publicadoPor"></span></p>
+                <hr>
+                <p class="font-bold">Ocupación: <span class="font-light" id="ocupacion"></span></p>
+                <hr>
+                <p class="font-bold">Primera Aparición: <span class="font-light" id="primeraAparicion"></span></p>
+                <hr>
+                <p class="font-bold">Altura: <span class="font-light" id="altura"></span></p>
+                <hr>
+                <p class="font-bold">Peso: <span class="font-light" id="peso"></span></p>
+                <hr>
+                <p class="font-bold">Alianzas: <span class="font-light" id="alianzas"></span></p>
+            </div>
+        </div>
+        <div id="chart">
+
+        </div>
+    </section>
+    
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- Canvas JS -->
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
